@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            My Own Cheatsheet
+        </title>
+        <link href="./styles.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>CSS DISPLAY AND POSITIONING CHEATSHEET</h1> 
+        </header>
+        <main>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Property Name</th>
+                        <th>Description</th>
+                        <th>Representation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>z-index</td>
+                        <td>The CSS z-index property specifies how far back or how far forward an element will appear on a web page when it overlaps other elements.
+                            <br>The z-index property uses integer values, which can be positive or negative values. The element with the highest z-index value will be at the foreground,
+                            while the element with the lowest z-index value will be at the back. 
+                        </td>
+                        <td>.element1 {
+                            <br>position: absolute;
+                            <br>z-index: 1;
+                        <br>}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>position</td>
+                        <td>Positioning in CSS provides designers and developers options for positioning HTML elements on a web page. 
+                            <br>The CSS <em>position</em> can be set to <em>static, relative, absolute</em> or <em>fixed</em>. When the CSS position has value of <em>fixed</em>, it is set to a specific spot on a page.
+                            <br>The fixed element stays the same regardless of scrolling. The navigation bar is a great example of an element that is often set to <em>position: fixed;</em>, enabling the user to scroll through the web page and still access the navigation bar. 
+                        </td>
+                        <td>navbar {
+                           <br> position: fixed;   <br> 
+                        }
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>display</td>
+                        <td>The CSS <em>display</em> property determines the type of render block for an element. The most common values for this property are <em>block, inline </em> and <em>inline-block</em>.
+                        <br><em>Block-level</em> elements take up the full width of their container with line breaks before and after, and can have their height and width manually adjusted.
+                        <br><em>Inline</em> elements take uo as little space as possible, flow horizontally, and cannot have their width or height manually adjusted.
+                        <br><em>Inline-block</em> elements can appear next to each other, and can have their width and height manually adjusted.
+                        </td>
+                        <td>
+                            .container1 {
+                            <br>    display: block;
+                            <br>}
+                            <br>.container2 {
+                            <br>    display: inline;
+                            <br>}
+                            <br>.container3 {
+                             <br>   display: inline-block;
+                            <br>}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>position: absolute</td>
+                        <td>The value <em>absolute</em> for the CSS property <em>position</em> enables an element to ignore sibling elements and instead be positioned relative to its closest parent element that is positioned with <em>relative</em> or  <em>absolute</em><br>
+                        The <em>absolute</em> value removes an element entirely from the document flow.<br>
+                        By using the positioning attributes <em>top, left, bottom</em> and <em>right</em>, an element can be positioned anywhere as expected.
+                        </td>
+                        <td>
+                            .element {
+                                <br>position: absolute; <br>
+                            }
+
+                        </td>
+                    </tr> 
+                    <tr>
+                        <td>position: relative</td>
+                        <td>
+                            The value <em>relative</em> of the CSS <em>position</em> property enables an element to be positioned relative to where it would have originally been on a web page.
+                        <br>The offset properties can be used to determine the actual position of the element relative to its original position.
+                        <br>Without the offset properties, this declaration will have no effect on its positioning, it will act as the default value <em>static</em> of the <em>position</em> property.
+                        </td>
+                        <td>
+                            .element{
+                                <br>position: relative;
+                            <br>}
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>float</td>
+                        <td>The CSS <em>float</em> propertydetermines how far left or how far right an element should float within its parent element.
+                        <br>The value <em>left</em> floats an element to the left side of its container and the value <em>right</em> floats an element to the right side of its container.
+                        <br>For the property <em>float</em>, the <em>width</em> of the container must be specified or the element will assume the full width of its containing element.
+                        </td>
+                        <td>
+                            Content will move to the left of the container.<br>
+                            .left {
+                                <br>float: left;
+                            <br>}
+                            <br>Content will move to the right of the container
+                            <br> .right {
+                                <br> float: right; <br>
+                            }
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>clear</td>
+                        <td>The CSS <em>clear</em> property specifies how an element should behave when it bumps into another element within the same containing element
+                        <br>The <em>clear</em> is usually used in combination with elements having the CSS <em>float</em> property. This determines on which sides floating elements are allowed to float.
+                        </td>
+                        <td>
+                            .element {
+                                <br>clear: left; <br>
+                            }<br>
+                            .element {
+                              <br>clear: right;<br>
+                            }<br>
+                            .element {
+                                <br>clear: both; <br>
+                            }<br>
+                            .element {
+                                <br>clear: none; <br>
+                            }
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </main>
+    </body>
+</html>
